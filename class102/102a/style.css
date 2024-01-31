@@ -1,0 +1,6 @@
+h1 {color: purple; display: inline;  margin-right: 30px;}
+nav{border: solid 2px gainsboro; width: fit-content;}
+p {color: orange;}
+body {background-color: lightseagreen;}
+img {display: block; margin: auto; width: 250px;}
+h1:hover {color: greenyellow; font-weight: bolder;}

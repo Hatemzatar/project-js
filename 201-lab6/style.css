@@ -1,0 +1,73 @@
+body {
+  background-color: burlywood;
+}
+nav {
+  border: seagreen solid 10px;
+  border-style: dashed;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 50px 25px 50px;
+}
+li ,a {
+  display: inline;
+  margin: 20px;
+  font-size: 40px;
+  color: darkred;
+}
+ul {
+  text-align: center;
+}
+nav img {
+  display: block;
+  margin: auto;
+}
+
+main p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+footer {
+  border: seagreen solid 10px;
+  border-style: dashed;
+  border-radius: 25px;
+  width: 50%;
+  padding: 5px;
+  margin: auto;
+  margin-top: 100px;
+}
+footer p {
+  font-size: 20px;
+  text-align: center;
+}
+.info {
+  font-size: 15px;
+  color: brown;
+  font-weight: bolder;
+}
+
+    form input {
+        display: block;
+        margin: auto;
+        
+    }
+
+    form label {
+        display: block;
+        text-align: center;
+        color: black;
+    }
+
+form fieldset {
+    width: 500px;
+    margin: auto;
+    color: brown;
+    border-color: green;
+}
+

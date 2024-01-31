@@ -1,0 +1,320 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+
+padding: 1rem 5%;
+
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .navigation {
+    list-style: none;
+    display: flex; gap: 15px;
+  }
+  
+  .navigation li {
+    padding: 0 15px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: #3d444c;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 0;
+
+}
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #121212;
+  }
+  
+  .hero p {
+    margin-bottom: 2rem;
+    color: #000000;
+    font-size: larger;
+  }
+  
+  .cta {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta:hover {
+    background-color: #55595e;
+  }
+  
+  .all-body {
+    background: linear-gradient( rgb(220, 206, 206), rgb(118, 105, 144));
+  }
+
+  
+
+  footer {
+    background: #000000f7;
+    color: #adb5bd;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .navigation {
+      display: none; 
+    }
+  }
+
+  .services-section {
+    text-align: center;
+       
+    padding: 20px;
+  }
+  
+  .services-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .services-section p {
+    margin-bottom: 30px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .service-box {
+    width: 30%; 
+    border: 3px solid #000000; 
+    padding: 20px;
+    margin: 10px;
+    background-color: blueviolet; 
+    box-shadow: 0 20px 15px rgb(0, 0, 0);
+border-radius: 50px;
+color: white;
+  }
+  
+  .service-box h3 {
+    color: black; 
+    margin-bottom: 15px;
+  }
+  
+  .service-box p {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+  
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+    }
+  
+    .service-box {
+      width: auto; 
+      margin: 10px auto;
+    }
+  }
+
+  .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  .about-section {
+    border: 4px solid #000000; 
+    padding: 20px;
+    background-color: blueviolet; 
+    box-shadow: 0 20px 15px rgb(0, 0, 0);
+    border-radius: 40px;
+  }
+
+  #about,
+  #services {
+  text-align: center;
+  margin: auto;
+  }
+
+  .about-section h2 {
+    text-align: center;
+    color: #007bff;
+  }
+
+  .about-section p {
+    text-align: justify;
+    margin-bottom: 15px;
+    color: black;
+  }
+
+  .about-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-section .team {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Animated Hero Section */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero h1, .hero p, .cta {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Hover Effects on Navigation Links */
+  .navigation a {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #6b727b;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navigation a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* Interactive Service Boxes */
+  .service-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Parallax Scrolling Effect */
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px; /* Adjust as needed */
+  }
+  
+
+  .footer {
+    background: linear-gradient(rgb(117, 106, 143), rgb(35, 32, 42));
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 1px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.footer-header {
+    position: relative;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+.footer-header::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust based on your specific design */
+    width: 100px; /* Width of the red line */
+    height: 3px; /* Height of the red line */
+    background-color: rgb(106, 17, 190); /* Red color */
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: rgb(133, 132, 132);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 1000px;
+    }
+}
+
+
+  
+  

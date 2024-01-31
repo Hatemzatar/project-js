@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #009688;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --text-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: red;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive typography using clamp */
+h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+}
+
+/* Using grid for layout */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  header {
+    background: #333333;
+  }
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Media query for mobile navigation */
+@media (max-width: 768px) {
+    /* Styles for mobile navigation */
+}

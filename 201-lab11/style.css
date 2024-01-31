@@ -1,0 +1,106 @@
+nav {
+    display: flex;
+    margin-right: 200px;
+}
+
+h2 {
+    color: blanchedalmond;
+   display: inline-block;
+   padding: 25px;
+   
+}
+body, main{
+    background-color:rgb(52, 26, 8);
+}
+
+main div {
+    width: 100%;
+    background-color:rgba(71, 35, 12, 0.521);
+    color: blanchedalmond;
+
+}
+
+main div h3, p {
+    width: 33%;
+}
+
+main div p {
+
+    overflow-y: auto;
+    height: 100px;
+}
+
+header nav div {
+    width: 50%
+}
+
+.mainDiv {
+    display: flex;
+    
+
+}
+
+section h3, p {
+    color: blanchedalmond;
+
+}
+
+.mainDiv2 {
+    display: flex;
+    color: blanchedalmond;
+
+
+}
+
+.mainSection1{
+    width: 25%;
+}
+
+.line1 {
+    width: 19cm;
+    margin-left: 1px;
+}
+
+.line2 {
+    height: 7cm;
+    width: 0px;
+    margin-right: 40px;
+}
+
+.line3 {
+    height: 0cm;
+    width: 15cm;
+    margin-left: 40px;
+}
+
+footer {
+    color: blanchedalmond;
+
+}
+
+footer ul li {
+    margin: 10px;
+    
+}
+
+footer div {
+    display: flex; gap: 120px;
+}
+
+.footer1 {
+width: 50%;
+display: flex; gap: 1px;
+}
+
+a {
+    color: blanchedalmond;
+    text-decoration:none;
+}
+
+
+.mainDiv3 {
+    margin-left: 50px;
+    background-color:rgb(66, 34, 11);
+    
+}
+

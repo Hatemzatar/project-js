@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(81, 40, 11);
+        }
+
+        h3 {
+            font-weight: bolder;
+            color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(52, 26, 8);
+            text-align: center;
+            font-size: larger;
+            padding: 5px;
+            width: 7;
+
+        }
+
+        header {
+            background-color: rgb(52, 26, 8);
+            color: blanchedalmond;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            margin: 20px;
+        }
+        
+        .dessertContainer , .coffeeContainer , .juiceContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .divContainer {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .category {
+            text-align: center;
+            padding: 4px;
+            background-color: blanchedalmond;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 50%;
+            width: 33.3%;
+        }
+
+
+        .price {
+            font-weight: bold;
+            font-size: larger;
+            color: black;
+            text-align: center;
+        }
+
+        .add-to-basket {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        .add-to-basket:hover {
+            background-color: #555;
+        }
+
+        #basketCount {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: rgb(52, 26, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav style="height: 100px;">
+                <div><img
+                        src="https://static.vecteezy.com/system/resources/previews/023/617/247/original/coffee-shop-logo-free-png.png"
+                        width="30%" height="90%"> </div>
+                <div>
+                    <h2><a href="index.HTML">Home</a></h2>
+                    <h2><a href="order.HTML">Order</a></h2>
+                    <h2><a href="contact.HTML">Contact us</a></h2>
+                </div>
+            </nav>
+            <br>
+            <h1>Order</h1>
+    </header>
+
+    <div id="basketCount"><img src="https://e7.pngegg.com/pngimages/1020/932/png-clipart-shopping-cart-online-shopping-computer-icons-shopping-basket-retail-logo.png"> </div>
+
+    <div class="container">
+        <h3>Desserts</h3>
+        <div class="dessertContainer">
+            <div class="divContainer">
+                <img class="category" src="https://img.freepik.com/premium-photo/delicious-chocolate-cake-chocolate-cake-dark-brown-background_792465-2.jpg" width="100%" height="50%">
+                <p class="price">$5.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+
+            <div class="divContainer">
+                <img class="category" src="https://img.freepik.com/premium-photo/cake-with-strawberries-top-piece-cake-with-purple-background_81048-14933.jpg" width="100%" height="50%">
+                <p class="price">$5.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+
+            <div class="divContainer">
+                <img class="category" src="https://www.alsothecrumbsplease.com/wp-content/uploads/2019/07/Black-Forest-Cake-12.jpg" width="100%" height="50%">
+                <p class="price">$5.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <h3>Coffee</h3>
+        <div class="coffeeContainer">
+            <div class="divContainer">
+                <img class="category" src="https://img.freepik.com/premium-photo/cup-coffee-latte-with-foam-close-up-black-cup-cappuccino_208024-600.jpg" width="100%" height="100%">
+                <p class="price">$3.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+
+            <div class="divContainer">
+                <img class="category" src="https://static.vecteezy.com/system/resources/previews/028/739/297/large_2x/cup-of-latte-coffee-with-cinnamon-star-anise-and-whipped-cream-on-a-plate-blurred-sparkling-dark-and-orange-background-with-beautiful-bokeh-coffee-beans-glitter-on-the-wooden-table-ai-generative-photo.jpg" width="100%" height="100%">
+                <p class="price">$3.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+
+            <div class="divContainer">
+                <img  class="category" src="https://www.menu-touch.fr/resto/media/1547/f9da8309ec48e65024ea2e98fc609668.jpg" width="100%" height="100%">
+                <p class="price">$3.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <h3>Fresh juices</h3>
+        <div class="juiceContainer">
+            <div class="divContainer">
+                <img class="category" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgotbrHbYLbLCykCe8TQNGObIdhWYST5jjA&usqp=CAU" width="100%" height="42%">
+                <p class="price">$4.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+
+            <div class="divContainer">
+                <img class="category" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tuVlf5kCrI4f0P55dlT2ix9U2K22iTXN_A&usqp=CAU" width="100%" height="42%">
+                <p class="price">$4.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+
+            <div class="divContainer">
+                <img  class="category" src="https://t3.ftcdn.net/jpg/03/13/45/86/360_F_313458620_nBRgb9Oezs2S93GO3KA5y7QLnZK8oz9R.jpg" width="100%" height="42%">
+                <p class="price">$4.99</p>
+                <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToBasket() {
+           
+            let basketCount = localStorage.getItem('basketCount') || 0;
+
+           
+            basketCount++;
+            localStorage.setItem('basketCount', basketCount);
+
+            updateBasketCount();
+
+        }
+
+        function updateBasketCount() {
+            // Update the basket count display
+            document.getElementById('basketCount').innerText = localStorage.getItem('basketCount');
+        }
+
+        // Initial update of the basket count
+        updateBasketCount();
+    </script>
+</body>
+<footer>
+    <div>
+        <div>
+            <ul>
+                <li>
+                    HOME
+                </li>
+                <li>
+                    ABOUT US
+                </li>
+                <li>
+                    MY ACCOUNT
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    FAQs
+                </li>
+                <li>
+                    OUR SERVIECE
+                </li>
+                <li>
+                    CAREER
+                </li>
+            </ul>
+        </div>
+        <div class="footer1">
+            <h4>Get in touch!</h4>
+            <br>
+            <hr>
+            <p>zatar.hatem@gmail.com</p>
+            <p>+962797360651</p>
+        </div>
+    </div>
+</footer>
+</html>

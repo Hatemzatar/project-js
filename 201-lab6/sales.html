@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookies Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid green;
+        border-collapse: collapse;
+        margin: auto;
+        text-align: center;
+        background-color:lightgreen;
+        padding: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+
+      <img
+        src="https://github.com/AbdulhakimZatar/amman-201d7/blob/master/class-06/lab/assets/salmon.png?raw=true"
+      />
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="sales.html"> Sales </a></li>
+        <li><a href="index.html"> Store </a></li>
+        <li><a href="index.html"> Orders </a></li>
+      </ul>
+
+      
+    </nav>
+    <br />
+    <form id="shopForm">
+        <fieldset>
+          <legend>Add Location</legend>
+          <label for="cityName">Store Location:</label>
+          <input name="name" id="cityName" type="text">
+          <br>
+          <label for="minCus">Minimum Costumer per Hour: </label>
+          <input name="minimumCostumerPerHour" id="minCus" type="number" required>
+          <br>
+          <label for="maxCus">Maximum Costumer per Hour: </label>
+          <input name="maximumCostumerPerHour" id="maxCus" type="number" required>
+          <br>
+          <label for="avgCus">Average Costumer per Hour: </label>
+          <input name="averageCostumerPerHour" id="avgCus" type="number" required>
+          <br>
+          <input type="submit" value="Add Location">
+        </fieldset>
+      </form>
+      <br>
+      <br>
+    <main id="cookiesShop">
+      <script src="script.js"></script>
+      <br>
+      <br>
+    </main>
+  </body>
+</html>
